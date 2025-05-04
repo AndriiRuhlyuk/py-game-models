@@ -33,7 +33,7 @@ def main() -> None:
                 )},
             )
 
-        player, layer_created = Player.objects.get_or_create(
+        player, player_created = Player.objects.get_or_create(
             nickname=nickname,
             defaults={
                 "email" : player_info["email"],
